@@ -101,21 +101,6 @@ npm install
 cp .env.example .env
 ```
 
-Fill in `.env`:
-
-```env
-APIFY_TOKEN=
-TOKENROUTER_API_KEY=        # $200 free credit from hackathon
-TOKENROUTER_BASE_URL=https://api.tokenrouter.ai/v1
-TOKENROUTER_CHEAP_MODEL=anthropic/claude-haiku-4-5
-TOKENROUTER_STRONG_MODEL=anthropic/claude-opus-4-7
-BOTLEARN_API_KEY=
-STRIPE_SECRET_KEY=
-STRIPE_WEBHOOK_SECRET=
-RESEND_API_KEY=
-DATABASE_URL=file:./data/signaldigest.db
-PORT=3000
-```
 
 ### 3. Initialize database
 
