@@ -1,7 +1,9 @@
 import {
   AbsoluteFill,
+  Audio,
   interpolate,
   spring,
+  staticFile,
   useCurrentFrame,
   useVideoConfig,
   Sequence,
@@ -535,26 +537,27 @@ const FadeTransition: React.FC<{ children: React.ReactNode; durationIn?: number;
 export const SignalDigestDemo: React.FC = () => {
   return (
     <AbsoluteFill>
-      <Sequence from={0} durationInFrames={120}>
-        <FadeTransition totalFrames={120}><SceneTitle /></FadeTransition>
+      <Audio src={staticFile('voiceover.mp3')} />
+      <Sequence from={0} durationInFrames={109}>
+        <FadeTransition totalFrames={109}><SceneTitle /></FadeTransition>
       </Sequence>
-      <Sequence from={120} durationInFrames={240}>
-        <FadeTransition totalFrames={240}><SceneProblem /></FadeTransition>
+      <Sequence from={109} durationInFrames={219}>
+        <FadeTransition totalFrames={219}><SceneProblem /></FadeTransition>
       </Sequence>
-      <Sequence from={360} durationInFrames={240}>
-        <FadeTransition totalFrames={240}><SceneHowItWorks /></FadeTransition>
+      <Sequence from={328} durationInFrames={219}>
+        <FadeTransition totalFrames={219}><SceneHowItWorks /></FadeTransition>
       </Sequence>
-      <Sequence from={600} durationInFrames={480}>
-        <FadeTransition totalFrames={480}><SceneDigest /></FadeTransition>
+      <Sequence from={547} durationInFrames={438}>
+        <FadeTransition totalFrames={438}><SceneDigest /></FadeTransition>
       </Sequence>
-      <Sequence from={1080} durationInFrames={240}>
-        <FadeTransition totalFrames={240}><SceneFeedback /></FadeTransition>
+      <Sequence from={985} durationInFrames={219}>
+        <FadeTransition totalFrames={219}><SceneFeedback /></FadeTransition>
       </Sequence>
-      <Sequence from={1320} durationInFrames={240}>
-        <FadeTransition totalFrames={240}><ScenePricing /></FadeTransition>
+      <Sequence from={1204} durationInFrames={218}>
+        <FadeTransition totalFrames={218}><ScenePricing /></FadeTransition>
       </Sequence>
-      <Sequence from={1560} durationInFrames={240}>
-        <FadeTransition totalFrames={240}><SceneCTA /></FadeTransition>
+      <Sequence from={1422} durationInFrames={219}>
+        <FadeTransition totalFrames={219}><SceneCTA /></FadeTransition>
       </Sequence>
     </AbsoluteFill>
   );

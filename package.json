@@ -11,8 +11,9 @@
     "scrape": "tsx src/scripts/run-scrape.ts",
     "digest": "tsx src/scripts/run-digest.ts",
     "demo:seed": "tsx src/scripts/seed-demo.ts",
-    "video:render": "npx remotion render video/index.ts RemotionRoot --output out/demo.mp4",
-    "video:preview": "npx remotion preview video/index.ts"
+    "video:audio": "tsx video/generate-audio.ts",
+    "video:render": "./node_modules/.bin/remotion render video/index.ts SignalDigestDemo --output out/demo.mp4 --public-dir video/public",
+    "video:preview": "./node_modules/.bin/remotion preview video/index.ts --public-dir video/public"
   },
   "dependencies": {
     "@hono/node-server": "^1.13.0",
