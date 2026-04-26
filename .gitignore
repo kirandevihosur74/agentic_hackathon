@@ -1,0 +1,10 @@
+node_modules/
+dist/
+data/
+out/
+.env
+*.db
+*.db-shm
+*.db-wal
+.DS_Store
+signaldigest-template.tar.gz

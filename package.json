@@ -1,0 +1,40 @@
+{
+  "name": "signaldigest",
+  "version": "0.1.0",
+  "description": "Crayon for the rest of us. Competitor intelligence for SaaS founders.",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "db:init": "tsx src/db/init.ts",
+    "scrape": "tsx src/scripts/run-scrape.ts",
+    "digest": "tsx src/scripts/run-digest.ts",
+    "demo:seed": "tsx src/scripts/seed-demo.ts",
+    "video:render": "npx remotion render video/index.ts RemotionRoot --output out/demo.mp4",
+    "video:preview": "npx remotion preview video/index.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.0",
+    "apify-client": "^2.10.0",
+    "better-sqlite3": "^11.3.0",
+    "dotenv": "^16.4.5",
+    "hono": "^4.6.0",
+    "resend": "^4.0.0",
+    "stripe": "^17.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@remotion/cli": "^4.0.451",
+    "@remotion/renderer": "^4.0.451",
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^22.7.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "remotion": "^4.0.451",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
